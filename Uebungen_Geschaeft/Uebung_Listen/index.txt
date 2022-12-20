@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+		<meta charset="UTF-8">
+		<title>Uebung Listen</title>
+	</head>
+
+	<body>
+		<h1>Hier soll eine Definitionsliste ausgezeichnet werden</h1>
+		
+		<dl>
+			<dt>Definitionsliste</dt>
+				<dd>In einer Definitionliste werden die Begriffe in einem separaten Abschnitt erklärt</dd>
+			<dt>Ungeordnete Liste</dt>
+				<dd>In einer ungeordneten Liste werden die Elemente mit einem Aufzählungszeichen dargestellt</dd>
+			<dt>Geordnete LIste</dt>
+				<dd>In einer geordneten Liste werden die Elemente mit Zahlen dargestellt und auggezählt</dd>
+		</dl>
+
+		<hr>
+	</body>
+</html>
