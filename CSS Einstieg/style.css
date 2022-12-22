@@ -1,0 +1,21 @@
+body {
+    background-color: azure;
+}
+h1 {
+    color: red;
+}
+p{
+
+    font-size: 20px;
+}
+
+a:link {
+    color:black;
+}
+
+a:visited{
+    color:brown;
+}
+h1:hover {
+    background-color: aqua;
+}
