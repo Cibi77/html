@@ -1,0 +1,24 @@
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+thead tr {
+    border: 1px solid black;
+}
+
+tbody {
+    /*border: 1px solid;*/
+}
+
+tbody tr:nth-child(odd){
+    background-color: rgb(197, 194, 194);
+}
+
+tbody tr:last-child {
+    background-color: black;
+    color: white;
+}
+
+h1 {
+    color: blue;
+}

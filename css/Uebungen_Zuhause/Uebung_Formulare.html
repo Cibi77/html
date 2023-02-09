@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="de-de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Uebung_Formulare.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
+    <title>Uebung zu Formularen</title>
+</head>
+<body>
+   <h1>Übung zu Formularen</h1> 
+   <form action="#" method="post">
+        <fieldset>
+            <legend>Kontaktdaten</legend>
+            <p>
+                <label for="surname">
+                    Vorname:
+                    <input type="text" name="surname" id="surname" placeholder="Ihr Vorname" required> <sup>*</sup>
+                </label>
+                <label for="name">
+                    Name:
+                    <input type="text" id="name" name="name" placeholder="Ihr Nachname" required> <sup>*</sup>
+                </label>
+            </p>
+            <p class="indent">
+                <label for="country">
+                    Land:
+                    <select name="country" id="country" size="multiple">
+                        <option value="CH" selected>Schweiz</option>
+                        <option value="DE">Deutschland</option>
+                        <option value="AT">Österreich</option>
+                    </select>
+                </label>
+            </p>
+            <p class="indent">
+                <label for="mail">
+                    e-mail:
+                    <input type="email" id="mail" name="mail" placeholder="e-mail Adresse">
+                </label>
+            </p>
+            <p class="choise">
+                <label for="request-type">
+                    Art der Anfrage:
+                    <br>
+                    <div class="radio"> Frage: </div>
+                    <input type="radio" id="question" name="request-type" value="question"> <br>
+                    <div class="radio">Beschwerde:</div>
+                    <input type="radio" id="complaint" name="request-type" value="complaint"> <br>
+                    <div class="radio">Verbesserungsvorschlag:</div>
+                    <input type="radio" id="proposal" name="request-type" value="proposal"> <br>                    
+                </label>
+            </p>
+            <p class="buttons">
+                <input type="submit" value="Daten absenden">
+                <input type="reset">
+            </p>
+        </fieldset>
+   </form>
+</body>
+</html>

@@ -1,0 +1,19 @@
+li:nth-last-child(odd) {
+    background-color: rgb(187, 181, 181);
+}
+
+ul li ul li:nth-child(even) {
+    background-color: white;
+}
+
+ul li ul li {
+    display: inline;
+}
+
+ul li ul li:hover {
+    background-color: yellow;
+}
+
+body ul li:hover {
+    background-color: red;
+}
