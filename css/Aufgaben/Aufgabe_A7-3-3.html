@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8>
+	<title>Aufgabe A7-3-3</title>
+	<link rel="stylesheet" href="Aufgabe_A7-3-3.css">
+</head>
+<body>
+	<form>
+		<fieldset>
+			<legend>Feedback-Formular</legend>
+			<div>
+				<label for="name">Name:
+					<input type="text" id="name" name="name" placeholder="Ihr Name">
+				</label>
+			</div>
+			<div>
+				<label for="surname">Vorame:
+					<input type="text" id="vorname" name="vorname" placeholder="Ihr Vorname">
+				</label>
+			</div>
+				<label for="mail">E-mail: 
+					<input type="email" id="mail" name="mail" placeholder="E-mail Adresse" required>
+				</label>
+				<label for="mail" class="requiredfield"></label>
+			<div>
+				<label for="year">Geburtsjahr:
+					<input type="number" id="name" name="name" placeholder="Ihr Name" placeholder="1980">
+				</label>			
+			</div>
+			<div>
+				<label for="gender">Geschlecht:
+					<input type="radio" id="gender" name="gender" value=male">männlich
+					<input type="radio" id="gender" name="gender" value="female">weiblich
+				</label>
+			</div>
+			<div>
+				<label for="message>Ihre Nachricht:
+					<textarea id="message" name="message" placeholder="Ihre Nachricht" required rows="8">
+				</label>
+				<label for="message class="requieredfield"></label>
+			</div>
+			<div>
+				<input type="checkbox" id="response" name="response" value="response_required">
+				<label for="response">Rückmeldung erwünscht?</label>
+			</div>
+			<div>
+				<input type="submit" value="submitted">
+				<input type="reset" value="resetted">
+			</div>
+			<div>
+				(x)=Eingabe erforderlich.
+			</div>
+		</fieldset>
+	</form>
+</body>
