@@ -5,10 +5,12 @@ h2 {
 form {
 	width: 50%;
 	min-width: 40em;
+
 }
 
 fieldset {
 	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
 
 legend {
@@ -17,29 +19,71 @@ legend {
 }
 
 div {
-	margin: 10px;
-	padding: 5px 0px;
-	/*display: block;*/
-	/*float: left;*/
+	margin: 0.7em 0em;
+	padding: 0em ;
 }
 
 label {
-	min-width: 10em;
+	min-width: 8em;
 	display: inline-block;
-	/*text-align: left;*/
+	text-align: left;
+}
+
+label:first-child {
+	vertical-align: top;
 }
 
 input {
 	width: 20em;
 }
 
+textarea {
+	width: 22em;
+}
+
+textarea:required + label::after, input:required + label::after {
+	color: red;
+	content: "\2715";
+}
+
+textarea:valid + label::after, input[type="email"]:valid + label::after {
+	color: green;
+	content: "\2713"; 
+}
+
+input[type="checkbox"] {
+	margin-left: 12em;
+	width: 1em;
+}
+
+input[type="text"], input[type="email"], input[type="number"], textarea {
+	border: 1px solid #fff;
+	border-bottom: 1px solid #aaa;
+	box-shadow: 0px 10px 5px -8px #aaa;
+}
+
+input[type="text"]:hover, input[type="email"]:hover, input[type="number"]:hover, textarea:hover {
+	background: #fff2a8;
+}
+
+label.requiredfield {
+	width: 1em;
+}
+
 #gender, #response {
-	width: 3em;
+	width: 2em;
 }
 
 #submit, #reset {
 	width: 10em;
 	position: relative;
 	left: 20%;
+    	border: 1px solid #fff;
+    	border-bottom: 2px solid #aaa; 
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover {
+	background: #E54100;
+	color: #fff;
 }
 
