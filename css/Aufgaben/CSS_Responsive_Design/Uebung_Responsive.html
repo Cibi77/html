@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Responsive</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            
+        }
+
+        header{
+            background-color: rgb(78, 75, 75);
+            
+        }
+
+        h1{
+            color: red;
+            text-align: center;
+        }
+
+        nav{
+            background-color: gray;
+        }
+
+        nav ul{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+
+        li {
+            list-style-type: none;
+            margin: 0 20px 0 5px;
+        }
+
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        main{
+            display: flex;
+            flex-direction: column;
+            background-color: aqua;
+
+        }
+
+        aside{
+            background-color: brown;
+            order: 3;
+            flex: 40%
+        }
+
+        article{
+            flex-wrap: row;
+        }
+
+        footer{
+            background-color: coral;
+        }
+
+        @media only screen and (min-width: 768px){
+            nav ul {
+                flex-direction: row;
+            
+            }
+            div.article{
+                display: flex;
+                flex-direction: row;
+            }
+        }
+
+        @media only screen and (min-width: 1200px){
+            main {
+                flex-direction: row;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Demo Responsive</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Help</a></li>
+        </ul>
+    </nav>
+    <main>
+    <aside>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit repellendus quasi rerum voluptatibus harum quisquam sed ex, modi soluta corrupti illum sequi maxime repudiandae aperiam adipisci aliquam? Pariatur, quas ducimus!
+    </aside>
+    <div class="article">
+        <article>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere architecto id temporibus saepe. Magni natus eos eaque ipsum praesentium unde.
+        </article>
+        <article>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni harum, odio optio eius sint voluptates sed dolorem iste libero laudantium.
+        </article>
+    </div>
+    </main>
+        <footer>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, quam. Doloremque, quae possimus voluptatum culpa alias aut eum laudantium enim.
+            </p>
+
+        </footer>
+</body>
+</html>

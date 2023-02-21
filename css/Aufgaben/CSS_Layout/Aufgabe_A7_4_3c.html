@@ -4,24 +4,88 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Aufgabe_A7_4_3c.css">
-    <title>Document</title>
+    <title>Aufgaben_Layout</title>
+    <style>
+        *{
+            margin: 10px;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            font-size: 32px;
+            padding: 0px;
+        }
+
+        #container {
+            position: relative;
+            max-width: 80%;
+            height: 400px;
+            margin: 0 10vw;
+            border: 1px solid red;
+        }
+
+        .clearfix {
+            overflow: auto;
+            zoom: 1;
+        }
+
+        p {
+
+            border: 2px solid red;
+            width: 40%;
+            height: 150px;
+            overflow: hidden;
+        }
+
+        p:nth-of-type(1){
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+        p:nth-of-type(2){
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+        p:nth-of-type(3){
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+        }
+        p:nth-of-type(4){
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+        }
+
+      
+
+        span{
+            background-color: blue;
+            color: white;
+        }
+
+    </style>
 </head>
 <body>
-    <div id="container">
     <h1>Titel Aufgabe A7_4_3c</h1>
-    <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic maiores perspiciatis laborum vitae ipsam, repellat laboriosam assumenda delectus a molestiae culpa aspernatur officiis ullam quis exercitationem quia ipsum facere? Harum.
-    </p>
-    <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit, mollitia minus qui ratione vero, recusandae vel perspiciatis ex sint dolorem odit, aperiam sed culpa. Reprehenderit quasi quaerat delectus. Non, dolore.
-    </p>
-    <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia tempora adipisci incidunt libero alias quos recusandae similique delectus optio vitae, quam animi minima aspernatur non nam magni nulla facere dolorem!
-    </p>
-    <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae doloremque error veritatis? Commodi maxime sequi iure aliquam ipsum accusamus architecto, vitae rem exercitationem omnis ullam repellat et repellendus blanditiis illo?
-    </p>
+    <div id="container">
+        <p>
+            <span>Absatz 1</span>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic maiores perspiciatis laborum vitae ipsam, repellat laboriosam assumenda delectus a molestiae culpa aspernatur officiis ullam quis exercitationem quia ipsum facere? Harum.
+        </p>
+        <p>
+            <span>Absatz 2</span>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit, mollitia minus qui ratione vero, recusandae vel perspiciatis ex sint dolorem odit, aperiam sed culpa. Reprehenderit quasi quaerat delectus. Non, dolore.
+        </p>
+        <p>
+            <span>Absatz 3</span>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia tempora adipisci incidunt libero alias quos recusandae similique delectus optio vitae, quam animi minima aspernatur non nam magni nulla facere dolorem!
+        </p>
+        <p>
+            <span>Absatz 4</span>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae doloremque error veritatis? Commodi maxime sequi iure aliquam ipsum accusamus architecto, vitae rem exercitationem omnis ullam repellat et repellendus blanditiis illo?
+        </p>
     </div>
 </body>
 </html>
