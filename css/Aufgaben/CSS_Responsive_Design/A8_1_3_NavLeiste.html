@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigations Leiste</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+        body{
+            margin: 0;
+        }
+        li {
+            /*display: block;*/
+            list-style-type: none;
+            background-color: rgb(19, 45, 53);
+            width: 11em;
+            margin: 2px 2px;
+
+        }
+
+        a{
+            display: block;
+            text-decoration: none;
+            font-family: 'Lato', Tahoma, sans-serif;    
+            font-size: 1.1em;
+            font-style: bold;
+            color: white;
+            width: 8em;
+            height: 1.8em;
+            padding: 0.4em 1em 0em 1em;
+        }
+
+        a:hover{
+            background-color: rgb(65, 144, 156);
+        }
+
+        @media only screen and (min-width: 88em){
+            ul{
+                display: flex;
+                flex-direction: row;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+    <ul>
+        <li><a href="#">Startseite</a></li>
+        <li><a href="#">Dokumentation</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Forum / Wiki</a></li>
+        <li><a href="#">Downloads</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Reseller</a></li>
+        <li><a href="#">Partner</a></li>
+    </ul>
+    </nav>
+</body>
+</html>
